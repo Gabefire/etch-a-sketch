@@ -13,23 +13,23 @@ function createGrid(size) {
                 div = document.createElement('div')
             }
         row = document.createElement('div')
-    }}
-
+    }
+    blocks = document.querySelectorAll('.block')
+    blocks.forEach((block) =>{
+        block.addEventListener('mouseenter', function(e) {
+            e.target.style.background = 'black'
+        })
+    })
+    }
 
 const slider = document.querySelector("#myRange")
 let size = slider.value
-console.log(size)
 createGrid(size)
 
 slider.addEventListener('input', function(e) {
     size = e.target.value
     grid.innerHTML = '';
-    createGrid(size)
+    createGrid(size);
 })
 
-const blocks = document.querySelectorAll('.block')
-blocks.forEach((block) =>{
-    block.addEventListener('mouseenter', function(e) {
-        e.target.style.background = 'black'
-    })
-})
+
