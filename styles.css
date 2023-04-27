@@ -3,23 +3,6 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-.grid {
-    display: flex;
-    flex-direction: column;
-    height: 640px;
-}
-
-.row {
-    display: flex;
-    align-self: center;
-    width: 640px;
-    flex: 1;
-}
-
-.block {
-    flex: 1;
-    border: 1px solid black;
-}
 
 /* slider */
 .slide-container {
@@ -34,7 +17,7 @@ body {
     width: 640px;
     height: 15px;
     border-radius: 5px;
-    background: rgb(189, 189, 189);
+    background: rgb(209, 209, 209);
     outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
@@ -54,4 +37,56 @@ body {
     background: rgb(33, 33, 247);
     cursor: pointer;
 
+}
+
+/* grid */
+.grid {
+    display: flex;
+    flex-direction: column;
+    height: 640px;
+    width: 640px;
+    background-color: rgb(209, 209, 209);
+    align-self: center;
+}
+
+.row {
+    display: flex;
+    align-self: center;
+    width: 640px;
+    flex: 1;
+}
+
+.block {
+    flex: 1;
+    border: 1px solid black;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    width: 640px;
+    align-self: center;
+    justify-content: center;
+}
+.size {
+    align-self: center;
+    text-align: center;
+    margin: 20px;
+    font-size: 50px;
+    line-height: 100px;
+    width: 200px;
+    height: 100px;
+    color: rgb(33, 33, 247);
+    background-color: rgb(209, 209, 209);
+    border-radius: 5px;
+    
+}
+
+.footer button {
+    width: 200px;
+    height: 100px;
+    align-self: center;
+    background-color: rgb(209, 209, 209);
+    font-size: 50px;
+    color: rgb(33, 33, 247);
 }
