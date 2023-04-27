@@ -2,6 +2,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: rgb(33, 33, 247);
+    font-family: 'Century Gothic';
+}
+
+h1 {
+    align-self: center;
 }
 
 /* slider */
@@ -82,6 +88,7 @@ body {
     
 }
 
+
 .footer button {
     width: 200px;
     height: 100px;
@@ -89,4 +96,8 @@ body {
     background-color: rgb(209, 209, 209);
     font-size: 50px;
     color: rgb(33, 33, 247);
+}
+
+.footer button:hover {
+    background-color: white;
 }

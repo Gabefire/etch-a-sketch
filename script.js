@@ -37,4 +37,10 @@ slider.addEventListener('input', function(e) {
     sizeIndicator.textContent = `${size}x${size}`
 })
 
+/* clear */
+const clear = document.querySelector(".clear")
+clear.addEventListener('click', function() {
+    grid.innerHTML = '';
+    createGrid(size);
+})
 
