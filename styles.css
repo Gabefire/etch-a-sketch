@@ -4,10 +4,12 @@ body {
     justify-content: center;
     color: rgb(33, 33, 247);
     font-family: 'Century Gothic';
+    background-color: rgb(90, 90, 243);
 }
 
 h1 {
     align-self: center;
+    font-size: 50px;
 }
 
 /* slider */
@@ -53,18 +55,19 @@ h1 {
     width: 640px;
     background-color: rgb(209, 209, 209);
     align-self: center;
+    border: 5px solid rgb(151, 1, 1)
 }
 
 .row {
     display: flex;
     align-self: center;
-    width: 640px;
+    width: 100%;
     flex: 1;
 }
 
 .block {
     flex: 1;
-    border: 1px solid black;
+    outline: solid 1px black;
 }
 
 /* footer */
@@ -96,8 +99,10 @@ h1 {
     background-color: rgb(209, 209, 209);
     font-size: 50px;
     color: rgb(33, 33, 247);
+    border: 20px;
 }
 
 .footer button:hover {
     background-color: white;
+    border: 20px;
 }
